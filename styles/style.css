@@ -72,3 +72,19 @@ header>nav{
     width: 100%;
     max-height: 450px;
 }
+
+/*----------- sponsorship section styling ----------*/
+.sponsor_logos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-image: linear-gradient(to right,transparent,rgba(128, 128, 128, 0.438),transparent);
+    border-left: 0;
+    border-right: 0;
+    border-image-slice: 1;
+    max-width: 1100px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
