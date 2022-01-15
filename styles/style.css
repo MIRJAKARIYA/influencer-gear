@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Poppins&family=Roboto&family=Share+Tech&display=swap');
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Share Tech', sans-serif;
 font-family: 'Inter', sans-serif; */
@@ -168,6 +168,44 @@ main>section.item-container>.items{
     font-size: 14px;
     color: #787885;
     margin-top: 0;
+}
+/*sell ratio styling*/
+
+
+
+/* footer styling */
+footer{
+    background-color: black;
+    display: flow-root;
+}
+footer>.footer_article{
+    color: white;
+    margin: 50px auto;
+    text-align: center;
+    width: 350px;
+}
+.footer_article>h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.footer_article>p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+footer>.footer_article>.footer_icons{
+    margin: 14px auto 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.i-1,.i-2,.i-3,.i-4{
+    background-color: rgb(34, 27, 27);
+    padding: 6px;
+    border-radius: 50%;
 }
 /* media query for tablets */
 @media only screen and (max-width: 768px) {
