@@ -38,7 +38,7 @@ header a:hover{
     animation-name: buttonmove;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-play-state: running;
 }
@@ -292,7 +292,7 @@ footer>.footer_article{
     color: white;
     margin: 50px auto;
     text-align: center;
-    width: 350px;
+    max-width: 320px;
 }
 .footer_article>h1{
     font-family: 'Poppins', sans-serif;
@@ -408,8 +408,5 @@ footer>.footer_article>.footer_icons{
     }
     header>nav>.nav-title>h1>#drops_menu:hover #hidden-nav{
         display: block;
-    }
-    section>.latest_product{
-        margin-top: -200px;
     }
 }
