@@ -40,7 +40,8 @@ header>nav{
 }
 .nav-title>h1{
     color: #3A3A3A;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
 }
 .nav-menu>a{
     text-decoration: none;
@@ -74,7 +75,31 @@ header>nav{
     width: 100%;
     max-height: 450px;
 }
-
+.small_screen_only{
+    display: none;
+    cursor: pointer;
+}
+#hidden-nav{
+    background-color:rgba(224, 44, 109, 0.87);
+    position: absolute;
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.479);
+}
+#hidden-nav>a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px 10px;
+    color: black;
+    font-size: 13px;
+    font-weight: 0px;
+}
+#hidden-nav>a:hover{
+    color:seashell;
+}
 /*----------- sponsorship section styling ----------*/
 .sponsor_logos{
     width: 85%;
@@ -142,6 +167,7 @@ main>section.item-container>.items{
     font-weight: normal;
     margin-top: 6px;
     margin-bottom: 10px;
+    min-width: 170px;
 }
 .article-info>.stars{
     font-size: 10px;
@@ -170,6 +196,23 @@ main>section.item-container>.items{
     margin-top: 0;
 }
 /*sell ratio styling*/
+section.sell_ratio{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1100px;
+}
+section.sell_ratio>.left_side_picture{
+    width: 50%;
+    min-height: 400px;
+    background-color: red;
+}
+section.sell_ratio>.right_side_ratio{
+    width: 50%;
+    min-height: 400px;
+    background-color: green;
+}
+
 
 
 
@@ -209,6 +252,10 @@ footer>.footer_article>.footer_icons{
 }
 /* media query for tablets */
 @media only screen and (max-width: 768px) {
+    header>nav{
+        display: block;
+        text-align: center;
+    }
     main{
         width: 90%;
     }
@@ -219,7 +266,51 @@ footer>.footer_article>.footer_icons{
 
 /* media query for mobile */
 @media only screen and (max-width: 600px) {
+    .main_heading_part{
+        flex-direction: column-reverse;
+    }
+    .heading_description{
+        width: 100%;
+        text-align: center;
+    }
+    .heading_description>h1{
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    .heading_description>p{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heading_image{
+        width: 100%;
+    }
+    .sponsor_logos{
+        margin: 70px auto;
+        width: 100%;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
     section.item-container{
         grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .small_screen_only{
+        display:inline;
+    }
+    header>nav{
+        width:100%;
+        display: block;
+    }
+    header>nav>.nav-title>h1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header>nav>.nav-title>h1>#drops_menu:hover #hidden-nav{
+        display: block;
     }
 }
