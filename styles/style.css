@@ -256,6 +256,19 @@ footer>.footer_article>.footer_icons{
         display: block;
         text-align: center;
     }
+    .heading_description>h1{
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        color: #3A3A3A;
+    }
+    .heading_description>p{
+        font-weight: 600;
+        font-size: 13px;
+        width: 85%;
+        color:#3A3A3A;
+        font-family: 'Poppins', sans-serif;
+    }
     main{
         width: 90%;
     }
