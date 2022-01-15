@@ -233,7 +233,10 @@ main>section.item-container>.items:hover{
         max-width: 1100px;
         margin: 100px auto;
     }
-    .product_image,.product_info{
+    .product_image{
+        width: 50%;
+    }
+    .product_info{
         width: 50%;
         text-align: center;
     }
@@ -247,6 +250,7 @@ main>section.item-container>.items:hover{
         height: 100%;
         display: block;
         border-radius: 10px;
+        object-fit: cover;
     }
     section.latest_product>.product_info>div{
         width: 100px;
@@ -315,9 +319,19 @@ footer>.footer_article>.footer_icons{
 .footer_icons a{
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
-.footer_icons a:hover{
-    color:rgb(9, 122, 66);
+.footer_icons #insta:hover{
+    color: #833AB4;
+}
+.footer_icons #dribble:hover{
+    color: #EA4C89;
+}
+.footer_icons #twitter:hover{
+    color: #1DA1F2;
+}
+.footer_icons #youtube:hover{
+    color: #FF0000;
 }
 .i-1,.i-2,.i-3,.i-4{
     background-color: rgb(34, 27, 27);
