@@ -16,10 +16,11 @@ body{
     border: 0;
     cursor: pointer;
     letter-spacing: 0.3;
-    transition:background-color 0.5s;
+    transition:background-color 0.5s,transform 0.5s;
 }
 .btn:hover{
     background-color: #911441;
+    transform: scale(1.2);
 }
 .btn:active{
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.404);
